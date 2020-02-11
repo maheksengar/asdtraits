@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="static', filename='main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+  <body>
+
+    <form class="mt-5 mx-3 px-2" method="POST" action="{{url_for('predicted')}}">
+    <fieldset>
+      
+      <legend class="text-center qheading"> Individual Traits Questionnaire</legend>
+          
+          <div class="form-group my-4">
+            <label for="ageSelect" class="mb-2">Age(in months)</label>
+            <select class="custom-select" id="ageSelect" name="age">
+              <option selected disabled="true">Choose</option>
+              <option value="0">between 18-24</option>
+              <option value="1">between 25-36</option>
+            </select>
+          </div>
+          <div class="form-group my-4">
+            <label for="sexSelect" class="mb-2">Gender</label>
+            <select class="custom-select" id="sexSelect" name="sex">
+              <option selected disabled="true">Choose</option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+          </div>
+           <div class="form-group my-4">
+            <label for="ethSelect" class="mb-2">Ethnicity</label>
+            <select class="custom-select" id="ethSelect" name="ethnicity">
+              <option selected disabled="true">Choose</option>
+              <option value="Asian">Asian</option>
+              <option value="Black">Black</option>
+              <option value="Hispanic">Hispanic</option>
+              <option value="Latino">Latino</option>
+              <option value="Middle">Middle eastern</option>
+              <option value="Mixed">Mixed</option>
+              <option value="Native">Native Indian</option>
+              <option value="Others">Others</option>
+              <option value="Pacifica">Pacifica</option>
+              <option value="South">South Asian</option>
+              <option value="White">White European</option>
+            </select>
+          </div>
+          <div class="form-group my-4">
+            <p class="my-1">Was the child born with jaundice?</p>
+            <div class="form-check form-check-inline custom-control-inline custom-radio ml-5 my-0">
+              <input class="form-check-input custom-control-input" type="radio" name="jaundice" id="jaundicey" value="1">
+              <label class="form-check-label custom-control-label" for="jaundicey">Yes</label>
+            </div>
+            <div class="form-check form-check-inline custom-control-inline custom-radio ml-5 my-0">
+              <input class="form-check-input custom-control-input" type="radio" name="jaundice" id="jaundicen" value="0">
+              <label class="form-check-label custom-control-label" for="jaundicen">No</label>
+            </div>
+          </div>
+          <div class="form-group my-4">
+            <p class="my-1">Does any immediate family member has a history of autism?</p>
+            <div class="form-check form-check-inline custom-control-inline custom-radio ml-5">
+              <input class="form-check-input custom-control-input" type="radio" name="autism" id="autismy" value="1">
+              <label class="form-check-label custom-control-label" for="autismy">Yes</label>
+            </div>
+            <div class="form-check form-check-inline custom-control-inline custom-radio ml-5">
+              <input class="form-check-input custom-control-input" type="radio" name="autism" id="autismn" value="0">
+              <label class="form-check-label custom-control-label" for="autismn">No</label>
+            </div>
+          </div>
+            <div class="d-flex align-items-center justify-content-center my-3">
+              <button type="submit" class="btn btn-outline-primary p-2 mx-3 " style="font-size: 1.3rem;">Proceed</button>
+              <a role="button" class="btn btn-outline-dark mx-3 p-2 d-flex justify-content-start align-items-center" href="home.html">
+                <span class="fas fa-angle-double-left fa-2x mr-2"></span> 
+                <span> Back </span>
+              </a>
+          </div>
+          </div>
+    </fieldset>
+  </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

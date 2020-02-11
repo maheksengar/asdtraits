@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- {% if title %}
+        <title>ASD Traits Predictor - {{ title }}</title>
+    {% else %}
+        <title>ASD Traits Predictor</title>
+    {% endif %} -->
+</head>
+
+
+  <body>
+  	<!-- <div>
+	  {% block content %}{% endblock %}
+	</div> -->
+
+  <div data-spy="scroll" data-target="#main-navbar" data-offset="0">
+
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light d-none p-0" data-aos="slide-down" data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="120"
+              data-aos-easing="ease-in-out-quart"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor=".header"
+              data-aos-anchor-placement="top-top">
+      <div class="navbar-brand w-50 h-auto m-0 p-0" href="#home" style="font-size: 2rem;">
+        <img src="asdlogo.png" class="img-fluid rounded-circle d-inline m-0" style="width: 10vw; border:1px solid">
+        <h2 class="d-inline ml-2 w-25" style=" word-break: break-all;">ASD Traits Predictor</h2>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mr-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link myscroll" href="#asd">What is asd<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link myscroll" href="#stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link myscroll" href="#aboutus">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="header mb-0">
+      <div class="overlay d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <img src="asdlogo.png" class="img-fluid rounded-circle d-inline m-0" style="width: 10vw; border:1px solid">
+            <h2 style=" border-left: 1px solid; color: #ffffff" class="ml-3 pl-3 w-50 h-auto" > It's National Autism Awareness month!!</h2>
+          </div>
+        <div class="h-75 mt-5 d-flex flex-column justify-content-center align-items-center" style="">
+            <h1 id="header-title" class=" text-center pl-3">Having Autism means being different, not less!!</h1>
+
+          <div class="d-flex flex-column justify-content-center align-items-center p-3 mt-3 h-75" style="">
+            <a class="btn" id="order-btn" href="btest.html">Take the test</button>
+            <a href="#asd" class="fas fa-chevron-circle-down fa-2x mt-auto mb-5 myscroll" style="color: white;text-decoration: none;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="section mb-0 mt-0" id="asd" style="">
+    <h1 class="heading text-center">About ASD </h1>
+    <h4 class="subheading text-center">Autism Spectrum Disorder</h4>
+    <p class="p-4  text-center">
+      ASD, acronym for Autistic Spectrum Disorder is a neurodevelopmental disability that can cause significant social, communication and behavioral challenges. Characterised by deficits in communication, social interaction and restricted patterns of behaviour, this is one of the most common childhood disorders. The tendencies of people with ASD to communicate, interact, behave, and learn are different from most other people. Their learning, thinking, and problem-solving abilities can range from gifted to severely challenged.
+    </p>
+  </div>
+
+  <div class="section mb-0 mt-0" id="stats" style="">
+    <h1 class="heading text-center">Some Stats</h1>
+    <h4 class="subheading text-center">Neither evasive nor pervasive</h4>
+    <div class="d-flex justify-content-center align-items-center" id="stats">
+      <div class="stat-cards d-flex flex-column flex-sm-row flex-sm-wrap justify-content-center align-items-center">
+        <div class="card stat m-3 blue-overlay" id="stat1" style="width: 40vw ; height: 50vh">
+          
+        </div>
+
+        <div class="card stat m-3 blue-overlay" id="stat2" style="width: 40vw ; height: 50vh">
+        </div>
+
+        <div class="card stat m-3 blue-overlay" id="stat3" style="width: 40vw ; height: 50vh">
+        </div>
+
+        <div class="card stat m-3 blue-overlay" id="stat4" style="width: 40vw ; height: 50vh">
+        </div>
+      </div>    
+  </div>
+
+
+  <div class="section mb-0 mt-0" id="aboutus" style="">
+    <h1 class="heading text-center">About ASD Traits Predictor </h1>
+    <h4 class="subheading text-center">What this webapp does</h4>
+    <div class="" id="aboutuspara" style="font-size: 1.1rem;">
+      <div class="overlay d-flex justify-content-center align-items-center p-5">
+        <p style="color: #FFFFFF; font-weight: 700">
+          ASD Traits predictor uses Machine learning to predict early and significant Autistic traits in toddlers.
+          ASD is one of the most common childhood disorders. The standard diagnostic approaches are cumbersome(requires a direct clinician-to-child observation and takes hours to administer). This increases the waiting time for diagnosis and subsequent delays in access to therapy.
+          <br><br>
+          ASD Traits Predictor is a screening application which uses a dataset related to Autism Screening of toddlers to predict the Autistic patterns in toddlers. <br><br>
+          The prediction and anticipatory guidance provided by “ASD traits predictor” can streamline the process of diagnosis and help you decide if your child needs to undergo sophisticated diagnostic procedure and other much needed and suitable therapies sooner (which has the highest impact during earlier windows of social development).
+        </p>
+        
+      </div>
+      
+
+    </div>
+  </div>
+
+
+  <div class="section mb-0 mt- pt-0" id="footer">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-around align-items-start mr-5">
+        <h4 style="font-size: 1rem;"><i class="fas fa-map-marker-alt m-4"></i>Address</h4>
+        <h4 style="font-size: 1rem;"><i class="fas fa-phone m-4"></i>123456789</h4>
+        <h4 style="font-size: 1rem;"><i class="fas fa-envelope m-4"></i>abc@example.com</h4>
+      </div>
+
+      <div class="social-media ml-5" style="">
+        <p class="text-center" style="font-size: 0.8rem; letter-spacing: 2px;">Connect with us:</p>
+          <div class="d-flex flex-row justify-content-around align-items-center" id="social-media">
+            <div class="facebook icon">
+              <a href="https://www.facebook.com/mahek.sengar3"><i class="fab fa-facebook fa-2x" style="color:#fff"></i></a>
+            </div>
+            <div class="instagram icon">
+              <a href="https://www.instagram.com/mahek_sengar/"><i class="fab fa-instagram fa-2x" style="color:#fff"></i></a>
+            </div>
+            <div class="twitter icon">
+              <a href=""> <i class="fab fa-twitter fa-2x" style="color:#fff"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
